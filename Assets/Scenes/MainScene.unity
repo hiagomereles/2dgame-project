@@ -21721,6 +21721,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3950917957498447220, guid: a535b758a92974447a3cf6ccd05a857e, type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3950917957498447221, guid: a535b758a92974447a3cf6ccd05a857e, type: 3}
       propertyPath: m_Name
       value: Ruby
