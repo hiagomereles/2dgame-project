@@ -9,9 +9,10 @@ public class RubyController : MonoBehaviour
     float vertical;
 
     public int maxHealth = 5;
+    public int health { get { return currentHealth; } }
     int currentHealth;
 
-    public float speed = 3f;
+    float speed = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,7 @@ public class RubyController : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }
 
-    void changeHealth(int amount)
+    public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
